@@ -1,6 +1,6 @@
 {
   "name": "@patrickemoore/eslint-plugin-aliased-props",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An ESLint plugin to enforce aliased (named) types for React component props.",
   "main": "index.js",
   "scripts": {
