@@ -1,0 +1,29 @@
+{
+  "name": "@patrickemoore/eslint-plugin-aliased-props",
+  "version": "1.0.2",
+  "description": "An ESLint plugin to enforce aliased (named) types for React component props.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require @babel/register --recursive tests/**/*.test.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "react",
+    "typescript",
+    "props",
+    "aliased",
+    "named"
+  ],
+  "author": "Patrick Moore (patrick@patrick-moore.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/register": "^7.25.9",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "eslint": "^9.15.0",
+    "mocha": "^10.8.2"
+  }
+}
