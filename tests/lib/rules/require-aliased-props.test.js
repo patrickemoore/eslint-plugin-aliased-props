@@ -29,7 +29,7 @@ const ERROR = [{ message: 'Props should use a named interface or type alias inst
 const invalidCodeSamples = [
   {
     code: `
-      function SphereMarker(props: {
+      function SphereMarker({ position }: {
         position?: Vector3;
         color?: string;
       }) {
@@ -80,8 +80,17 @@ const invalidCodeSamples = [
   },
   {
     code: `
-      const AnotherComponent = React.memo((props: { title: string }) => {
+      const AnotherComponent = memo(({ title }: { title: string }) => {
         return <h1>{props.title}</h1>;
+      });
+    `,
+    filename: 'test.tsx',
+    errors: ERROR,
+  },
+  {
+    code: `
+      const SphereMarker = memo(function SphereMarker({ name }: { name: string }) {
+        return <div />;
       });
     `,
     filename: 'test.tsx',
