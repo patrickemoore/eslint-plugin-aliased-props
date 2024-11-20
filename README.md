@@ -9,7 +9,7 @@ This ESLint plugin enforces the use of aliased (named) types for React component
 To install the plugin, run:
 
 ```sh
-npm install eslint-plugin-aliased-props --save-dev
+npm install @patrickemoore/eslint-plugin-aliased-props --save-dev
 ```
 
 ## Configuration
@@ -18,9 +18,9 @@ To configure the plugin in your ESLint configuration file, add the following:
 
 ```json
 {
-  "plugins": ["aliased-props"],
+  "plugins": ["@patrickemoore/eslint-plugin-aliased-props"],
   "rules": {
-    "aliased-props/require-aliased-props": "error"
+    "@patrickemoore/eslint-plugin-aliased-props/require-aliased-props": "error"
   }
 }
 ```
