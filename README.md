@@ -18,9 +18,9 @@ To configure the plugin in your ESLint configuration file, add the following:
 
 ```json
 {
-  "plugins": ["@patrickemoore/eslint-plugin-aliased-props"],
+  "plugins": ["@patrickemoore/aliased-props"],
   "rules": {
-    "@patrickemoore/eslint-plugin-aliased-props/require-aliased-props": "error"
+    "@patrickemoore/aliased-props/require-aliased-props": "error"
   }
 }
 ```
